@@ -44,7 +44,7 @@ public class SortedBinaryTree extends BinaryTree {
             Node rightChild = insert(subRoot.getRightChild(), value);
             subRoot.setRightChild(rightChild);
         } else {
-            throw new DuplicateNodeException("DUPLICATE NODE", null);
+            throw new DuplicateNodeException("NODO DUPLICADO", null);
         }
         return subRoot;
     }
