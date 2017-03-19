@@ -9,7 +9,7 @@ package binarytree.struct;
  *
  * @author Oscar Enríquez
  */
-public class Node {
+public class Node implements Comparable<Node> {
     private Integer element;
     private Node leftChild;
     private Node rightChild;
@@ -43,6 +43,11 @@ public class Node {
 
     public void setRightChild(Node rightChild) {
         this.rightChild = rightChild;
+    }
+
+    @Override
+    public int compareTo(Node o) {
+        return o.getElement().compareTo(this.getElement());
     }
         
 }

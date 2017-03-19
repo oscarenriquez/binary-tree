@@ -31,6 +31,8 @@ public abstract class BinaryTree  {
     
     public abstract void insert(Integer value) throws DuplicateNodeException;
     
+    public abstract void delete(Integer value);
+    
     public abstract Node search(Integer value);
 
 }
